@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Create account · Ghost Ticket{% endblock %}
+{% block content %}
+<section class="card narrow">
+  <h1>Create account</h1>
+  <p class="muted">It takes a few seconds, no email needed.</p>
+  <form method="post">
+    <label>Username <input name="username" autocomplete="username" required autofocus></label>
+    <label>Password <input name="password" type="password" autocomplete="new-password" required></label>
+    <button type="submit">Create account</button>
+  </form>
+  <p class="muted">Already registered? <a href="{{ url_for('login') }}">Log in</a></p>
+</section>
+{% endblock %}

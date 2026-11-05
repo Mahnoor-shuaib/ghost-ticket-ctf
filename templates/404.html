@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Not found · Ghost Ticket{% endblock %}
+{% block content %}
+<section class="card narrow">
+  <h1>Ticket not found</h1>
+  <p class="muted">That ticket does not exist or the link is broken.</p>
+  <p><a href="{{ url_for('dashboard') }}">Go to your tickets</a></p>
+</section>
+{% endblock %}
